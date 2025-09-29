@@ -605,9 +605,9 @@ function Home() {
                                             <div>
                                                 <h3>Welcome</h3>
                                                 <p style={{marginTop:"-15px "}}>To access account and manage orders</p>
-                                                <a href="./LOGIN/Signup.html">
+                                                {/* <a href="./LOGIN/Signup.html">
                                                     <button id="logbtn">LOGIN / SIGNUP</button>
-                                                </a>
+                                                </a> */}
                                                  {/* <button>LOGIN / SIGNUP</button>  */}
                                             </div>
                                             <div style={{color: "#3e4152c5"}}>
@@ -642,7 +642,7 @@ function Home() {
                                 </a>
                             </li>
                             <li>
-                                <a href="./cart/cartPage.html">
+                                <a href="/cart">
                                     <div id="last-bag-box" className="pro">
                                         <img src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="" />
                                         <span id="cartCurrentItemShow" data-reactid="901" style={{fontSize: "11px", marginLeft: "10px"}}></span>

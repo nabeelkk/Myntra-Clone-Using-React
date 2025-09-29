@@ -630,7 +630,7 @@ function NavBar(){
                     </a>
                 </li>
                 <li>
-                    <a href="./cart/cartPage.html">
+                    <a href="/cart">
                     <div id="last-bag-box" className="pro">
                         <img src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="" />
                         <span id="cartCurrentItemShow" data-reactid="901" style={{fontSize: "11px", marginLeft: "10px"}}></span>
