@@ -5,7 +5,8 @@ import Cart from './pages/cart'
 import Address from './pages/Address'
 import ThankYou from './pages/ThankYou'
 import Payment from './pages/Payment'
-
+import Sample from './pages/sample'
+import Mens from './pages/Mens'
 
 
 
@@ -20,6 +21,8 @@ function App() {
         <Route path='address' element={<Address />}/>
         <Route path='payment' element={<Payment />} />
         <Route path='thankyou' element={<ThankYou/>}/>
+        <Route path='test' element = {<Sample/>}/>
+        <Route path='mens' element = {<Mens />}/>
       </Routes>
     </>
   )

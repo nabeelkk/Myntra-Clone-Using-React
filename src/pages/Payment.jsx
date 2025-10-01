@@ -1,4 +1,6 @@
 import "./Payment.css"
+import { Link } from "react-router";
+
 
 function Payment(){
     return(
@@ -7,11 +9,11 @@ function Payment(){
                 <div id="headerUnderline">
                     <div id="header">
                         <div>
-                            <a href="../../index.html"><img height="45px"
-                                    src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></a>
+                            <Link to="/"><img height="45px"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></Link>
                         </div>
                         <div>
-                            <p> <span className="navbarMiddle"> <a href="../../cart/cartPage.html" className="cart-page">BAG</a>  </span> ----------- <span className="navbarMiddle"> <a href="../address.html" className="address-middle">ADDRESS</a></span>
+                            <p> <span className="navbarMiddle"> <Link to="/cart" className="cart-page">BAG</Link>  </span> ----------- <span className="navbarMiddle"> <Link to="/address" className="address-middle">ADDRESS</Link></span>
                                 ----------- <span className="navbarMiddle navbarMiddlePayment"> PAYMENT </span> </p>
                         </div>
                         <div id="paymentNavSecure">
@@ -132,7 +134,7 @@ function Payment(){
                                                                 xmlns="http://www.w3.org/2000/svg" width="18" height="16"
                                                                 viewBox="0 0 20 17" prefix="">
                                                                 <g fill="#000" fillRule="nonzero">
-                                                                    <path stroke="#000" stroke-width=".3"
+                                                                    <path stroke="#000" strokeWidth=".3"
                                                                         d="M17.594 6.297V3.484a1.76 1.76 0 0 0-1.758-1.757h-4.369l.008-.315a1 1 0 0 0-.987-1.025L5.218.32H4.165C3.582.32 3.11.793 3.11 1.375v.352h-.351A1.76 1.76 0 0 0 1 3.484v10.758C1 15.212 1.789 16 2.758 16h10.758a1.76 1.76 0 0 0 1.722-1.406h.598a1.76 1.76 0 0 0 1.758-1.758v-.914h.351c.582 0 1.055-.473 1.055-1.055V7.703c0-.775-.63-1.406-1.406-1.406zm.703 1.406a.703.703 0 0 1-.703.703V7c.387 0 .703.315.703.703zM15.836 2.43c.582 0 1.055.473 1.055 1.054v4.922h-1.618v-2.11a1.76 1.76 0 0 0-1.406-1.722L11.5 4.6l-.033-2.17h4.369zM9.437 4.54V1.022h1.055c.194 0 .352.158.352.352v3.164H9.438zm-2.109 0V1.022h1.406V4.54H7.328zM3.812 1.374c0-.194.158-.352.352-.352h2.461V4.54H3.812V1.375zM2.758 2.43h.351v2.11h-.276c-.581 0-1.13-.422-1.13-1.056 0-.581.473-1.054 1.055-1.054zm10.758 12.867H2.758a1.056 1.056 0 0 1-1.055-1.055V4.87c.314.234.71.373 1.13.373h10.683c.581 0 1.054.473 1.054 1.055v2.11h-2.46c-.582 0-1.055.472-1.055 1.054v1.406c0 .582.473 1.055 1.054 1.055h2.461v2.32c0 .582-.473 1.055-1.054 1.055zm3.375-2.461c0 .582-.473 1.055-1.055 1.055h-.563v-1.97h1.618v.915zm1.054-1.617H12.11a.352.352 0 0 1-.351-.352V9.461c0-.194.157-.352.351-.352h5.485c.25 0 .491-.065.703-.188v1.946a.352.352 0 0 1-.352.352z">
                                                                     </path>
                                                                     <path
@@ -155,7 +157,7 @@ function Payment(){
                                                                 xmlns="http://www.w3.org/2000/svg" width="18" height="16"
                                                                 viewBox="0 0 18 16" prefix="">
                                                                 <g fill="none" fillRule="evenodd">
-                                                                    <path stroke="#000" stroke-width="1.125"
+                                                                    <path stroke="#000" strokeWidth="1.125"
                                                                         d="M1.498 6.625h15.048a.112.112 0 0 0 .069-.201L9.605 1 1.437 6.419a.112.112 0 0 0 .062.206z">
                                                                     </path>
                                                                     <path fill="#000"
@@ -177,14 +179,14 @@ function Payment(){
                                                                 xmlns="http://www.w3.org/2000/svg" width="18" height="16"
                                                                 viewBox="0 0 18 18" prefix="">
                                                                 <g fill="none" fillRule="evenodd" transform="translate(0 1)">
-                                                                    <path stroke="#000" stroke-width="1.125"
+                                                                    <path stroke="#000" strokeWidth="1.125"
                                                                         d="M13.52 4.5h2.23c.621 0 1.125.504 1.125 1.125v6.75c0 .621-.504 1.125-1.125 1.125H2.25a1.125 1.125 0 0 1-1.125-1.125v-6.75c0-.621.504-1.125 1.125-1.125h2.256">
                                                                     </path>
                                                                     <path fill="#000"
                                                                         d="M.844 14.625H6.75c0 .31.252.563.563.563h3.375c.31 0 .562-.252.562-.563h5.906a.844.844 0 1 1 0 1.688H.844a.844.844 0 1 1 0-1.688z">
                                                                     </path>
                                                                     <circle cx="9" cy="4.5" r="4.5" stroke="#000"
-                                                                        stroke-width="1.125"></circle>
+                                                                        strokeWidth="1.125"></circle>
                                                                     <path fill="#000" fillRule="nonzero"
                                                                         d="M9.466 7.4l.558-.258-1.702-1.7c.162-.027.32-.072.475-.133.154-.062.295-.142.422-.24.127-.1.237-.215.33-.35.094-.133.161-.285.201-.454h.75v-.57h-.744a1.11 1.11 0 0 0-.05-.167 1.963 1.963 0 0 0-.18-.357 1.048 1.048 0 0 0-.11-.146H10.5V2.4H7.591v.625h.42c.163 0 .31.018.44.053.13.036.244.084.341.146a.94.94 0 0 1 .381.47H7.591v.57h1.567a.799.799 0 0 1-.243.317c-.11.087-.231.158-.366.213a2.362 2.362 0 0 1-.797.165l-.252.439L9.466 7.4z">
                                                                     </path>
@@ -206,14 +208,14 @@ function Payment(){
                                                         <div className="card-base-heading"> CREDIT/ DEBIT CARD </div>
                                                         <div>
                                                             <input className="text" type="text" placeholder="Card Number"
-                                                                minlength="16" maxlength="16" required /><br/>
+                                                                minLength="16" maxLength="16" required /><br/>
                                                             <input className="text" type="text" placeholder="Name on card"
                                                                 required/><br/>
                                                             <input className="exp-date" type="month"
                                                                 placeholder="Valid Thru (MM/YY)" min="2022-08" max="2035-08"
                                                                  required/>
-                                                            <input className="cvv" type="text" placeholder="CVV" minlength="3"
-                                                                maxlength="3" required/>
+                                                            <input className="cvv" type="text" placeholder="CVV" minLength="3"
+                                                                maxLength="3" required/>
                                                         </div>
                                                     </div>
                                                     <button className="payNowAjax-base-actionButton">PLACE ORDER</button>
@@ -224,7 +226,7 @@ function Payment(){
                                     <div className="gift-div">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
                                             className="giftcard-base-giftIcon">
-                                            <path fillRule="evenodd" stroke="#000" stroke-width=".2"
+                                            <path fillRule="evenodd" stroke="#000" strokeWidth=".2"
                                                 d="M18.1 7.26h-5.85V4.577h5.85v2.685zm-5.85 9.845h4.95v-8.95h-4.95v8.95zm-9.45 0h4.95v-8.95H2.8v8.95zM1.9 4.576h5.85v2.685H1.9V4.576zm4.295-2.073c-.01-.098 0-.264.193-.464.12-.089.25-.11.402-.11.653 0 1.565 1.081 2.25 1.752H6.886c-.263-.224-.656-.835-.691-1.178zm5.155 14.602h-2.7V4.576h2.7v12.53zm1.879-15.183c.152 0 .28.028.401.117.194.2.204.371.194.47-.036.358-.45.948-.693 1.172h-2.152c.685-.671 1.596-1.759 2.25-1.759zm5.323 1.76h-4.279c.218-.225.408-.71.446-1.087.031-.303-.026-.77-.475-1.213-.012-.012-.025-.03-.038-.04a1.552 1.552 0 0 0-.977-.34c-1.248 0-2.587 1.527-3.22 2.342C9.376 2.529 8.037 1 6.79 1a1.549 1.549 0 0 0-1.015.37c-.449.442-.506.922-.475 1.225.039.376.228.862.446 1.086H1.448c-.247 0-.448.15-.448.4v3.61c0 .25.2.465.448.465H1.9v9.37c0 .246.19.474.42.474h15.363c.23 0 .417-.228.417-.474v-9.37h.452A.46.46 0 0 0 19 7.692V4.08c0-.25-.2-.4-.448-.4z">
                                             </path>
                                         </svg>
@@ -317,7 +319,7 @@ function Payment(){
                             <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt=""/>
                             <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt=""/>
                         </div>
-                        <a href="">Need Help ? Contact Us</a>
+                        <Link to="">Need Help ? Contact Us</Link>
                     </div>
                 </div>
             </div>

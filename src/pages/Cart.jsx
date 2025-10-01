@@ -1,17 +1,20 @@
 import './Cart.css'
+import {Link, useNavigate} from 'react-router'
+
 
 function Cart() {
+    const navigate = useNavigate()
     return (
         <>
             <div id="headerUnderline">
                 <div id="header">
                     <div>
-                        <a href="..//"><img height="45px"
-                            src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></a>
+                        <Link to="/"><img height="45px"
+                            src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></Link>
                     </div>
                     <div>
                         <p> <span id="bag" className="navbarMiddle"> BAG </span> ----------- <span
-                            className="navbarMiddle navbarMiddlePayment"> ADDRESS </span>
+                            className="navbarMiddle "> ADDRESS </span>
                             ----------- <span className="navbarMiddle"> PAYMENT </span> </p>
                     </div>
                     <div id="paymentNavSecure">
@@ -112,7 +115,7 @@ function Cart() {
                             </div>
 
 
-                            <button onClick={()=>{window.location.href = '/payment'}}>
+                            <button onClick={()=>{navigate('/address')}}>
                                 PLACE ORDER
                             </button>
                             </div>
@@ -192,7 +195,7 @@ function Cart() {
                         <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt="" />
                         <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt="" />
                     </div>
-                    <a href="">Need Help ? Contact Us</a>
+                    <Link to="">Need Help ? Contact Us</Link>
                 </div>
             </div>
             

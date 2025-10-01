@@ -1,18 +1,19 @@
 import "./Address.css"
-
+import {Link , useNavigate} from 'react-router'
 
 function Address(){
+    const navigate = useNavigate()
     return(
         <>
             <div className="layout">
                 <div id="headerUnderline">
                     <div id="header">
                         <div>
-                            <a href="../index.html"><img height="45px"
-                                    src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></a>
+                            <Link to="/"><img height="45px"
+                                    src="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" alt=""/></Link>
                         </div>
                         <div>
-                            <p> <span className="navbarMiddle"> <a href="../cart/cartPage.html" className="cart-page">BAG</a> </span> ----------- <span
+                            <p> <span className="navbarMiddle"> <Link to="/cart" className="cart-page">BAG</Link> </span> ----------- <span
                                     className="navbarMiddle navbarMiddlePayment"> ADDRESS </span>
                                 ----------- <span className="navbarMiddle"> PAYMENT </span> </p>
                         </div>
@@ -110,6 +111,7 @@ function Address(){
                                                                 </svg>
                                                                 <span id="totalamt">0</span>
                                                             </span>
+                                                            <button onClick={()=>{navigate('/payment')}} className="button-base-button-toPayment">PAYMENT</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -136,7 +138,7 @@ function Address(){
                                 <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png" alt=""/>
                                 <img src="https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png" alt=""/>
                             </div>
-                            <a href="">Need Help ? Contact Us</a>
+                            <Link to="">Need Help ? Contact Us</Link>
                         </div>
                     </div>
             </div>
